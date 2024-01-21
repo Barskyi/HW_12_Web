@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "user-fast-2"
+version = "0.1.0"
+description = ""
+authors = ["Barskyi <137706923+Barskyi@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.0"
+alembic = "^1.13.1"
+sqlalchemy = "^2.0.25"
+asyncpg = "^0.29.0"
+uvicorn = {extras = ["standard"], version = "^0.26.0"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pydantic = {extras = ["email"], version = "^2.5.3"}
+python-multipart = "^0.0.6"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+fastapi-users = {extras = ["sqlalchemy"], version = "^12.1.2"}
+aiosqlite = "^0.19.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
